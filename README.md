@@ -15,20 +15,36 @@ a list of common words
     at
     be
 
-# decommonize
+## decommonize
 a script to grep out common words
 
-# generate_decommonize
+## generate_decommonize
 generates `decommonize` from the `common` file
 
-# Initializing `decommonize`
+## Initializing `decommonize`
 
 Just run `make`, it will run `generate_decommonize`.
 
-# Regenerate after updating `common`
+## Regenerate after updating `common`
 
 Make will see that `decommonize` is there, and won't run, so you can override this by running `make -B`.
 
-# Install
+## Install
 
 Just run `make install`, but before you do, add `~/bin` to your PATH variable, this is where the `decommonize` executable will be copied.
+
+## words
+    $ echo 'This will be chopped. Chopped into individual words, with no punctuation' | ./words
+    this
+    will
+    be
+    chopped
+    chopped
+    into
+    individual
+    words
+    with
+    no
+    punctuation
+
+
