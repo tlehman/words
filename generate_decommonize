@@ -1,0 +1,8 @@
+#!/bin/sh
+# generate the decommonize script from the common file
+
+echo "\
+#!/bin/sh
+# remove common words (assuming one word per line)\n
+egrep -v '^ *( *|$(xargs < common | sed 's/ /|/g')) *$' "
+

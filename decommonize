@@ -1,0 +1,4 @@
+#!/bin/sh
+# remove common words (assuming one word per line)
+
+egrep -v '^ *( *|a|about|aint|all|an|and|are|as|at|be|been|but|by|come|could|did|didnt|do|dont|down|for|from|get|got|had|has|have|he|her|him|his|i|if|in|is|it|man|me|my|no|not|now|of|on|one|or|our|out|said|says|see|she|so|some|that|the|their|them|then|there|these|the|they|this|to|up|us|very|warnt|was|we|well|went|were|what|when|which|who|with|would|you|your) *$' 

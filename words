@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tr -d '[:punct:]' <&0 | tr '[:upper:] ' '[:lower:]\n'
