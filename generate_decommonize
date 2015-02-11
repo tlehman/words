@@ -4,5 +4,5 @@
 echo "\
 #!/bin/sh
 # remove common words (assuming one word per line)\n
-egrep -v '^ *( *|$(xargs < common | sed 's/ /|/g')) *$' "
+egrep -v '^ *( *|$(xargs < common | sed 's/ /|/g')) *$' " > decommonize
 
